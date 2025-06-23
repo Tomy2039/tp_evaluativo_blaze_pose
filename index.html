@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>BlazePose - Juego</title>
+  <link rel="stylesheet" href="styles.css">
+
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs-core"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs-converter"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs-backend-webgl"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/pose-detection"></script>
+</head>
+<body>
+  <h1>El juego de cortar frutas</h1>
+
+  <p>Corta la mayor cantidad de frutas posibles</p>
+  
+  <div id="gameContainer">
+    <div id="hud">Puntaje: 0</div>
+    <video id="video" width="640" height="480"></video>
+    <canvas id="output" width="640" height="480"></canvas>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
